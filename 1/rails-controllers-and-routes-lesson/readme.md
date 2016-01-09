@@ -98,7 +98,7 @@ cd routes_and_controllers
 Let's create a controller.
 
 ```
-  touch app/controllers/home_controller.rb
+  rails g home
 ```
 
 
