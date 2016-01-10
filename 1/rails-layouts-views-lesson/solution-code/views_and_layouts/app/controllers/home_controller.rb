@@ -8,7 +8,7 @@ class HomeController < ApplicationController
     # render action: "switch.html.erb"
     # render "home/switch"
     # render "home/switch.html.erb"
-    # render template: "home/switch"
+    render template: "home/switch"
     # render template: "home/switch.html.erb"
     # render "/path/to/rails/app/views/home/switch"
     # render "/path/to/rails/app/views/home/switch.html.erb"

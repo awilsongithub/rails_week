@@ -178,13 +178,13 @@ YES! These seven routes have been created just by adding `resources :posts` in t
 If we had to create these routes individually in ```routes.rb```, it would looks like this:
 
 ```ruby
-get    "/posts"          , to: "posts#index"
-post   "/posts"          , to: "posts#create"
-get    "/posts/new"      , to: "posts#new"
-get    "/posts/:id/edit" , to: "posts#edit"
-get    "/posts/:id"      , to: "posts#show"
-put    "/posts/:id"      , to: "posts#update"
-delete "/posts/:id"      , to: "posts#destroy"
+get    "/posts" => "posts#index"
+post   "/posts" => "posts#create"
+get    "/posts/new" => "posts#new"
+get    "/posts/:id/edit" => "posts#edit"
+get    "/posts/:id"=> "posts#show"
+put    "/posts/:id"=> "posts#update"
+delete "/posts/:id"=> "posts#destroy"
 ```
 
 ## Independent Practice (15 mins)
@@ -196,7 +196,7 @@ Re-use the application "blog" we've just created and add three routes to it manu
 * terms_and_conditions
 * team
 
-These three routes will be accessed via a GET request. When the user is accessing a route, the browser should display the name of the route, therefore, you'll need to create the related method in a controller (Hint: call your controller "StaticPages" and [read up](http://stackoverflow.com/questions/4479233/static-pages-in-ruby-on-rails) on static pages in Rails).
+These three routes will be accessed via a GET request. When the user is accessing a route, the browser should display the name of the route, therefore, you'll need to create the related method in a controller that renders text. 
 
 Then, create a "categories" controller using scaffold, remove the line added in routes.rb by the generator (`resources : categories`) and re-create the seven restful routes matching the 7 methods in the categories controller manually.
 
