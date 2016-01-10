@@ -98,7 +98,7 @@ cd routes_and_controllers
 Let's create a controller.
 
 ```
-  rails g home
+  rails g controller home
 ```
 
 
@@ -186,6 +186,22 @@ get    "/posts/:id"=> "posts#show"
 put    "/posts/:id"=> "posts#update"
 delete "/posts/:id"=> "posts#destroy"
 ```
+Now why did it make these specific routes vs anything else?
+It's because of REST convention! To recap REST means REpresentational State Transfer. 
+Basically how resources are supposed to be passed between server and client.
+
+##Conclusion (10 mins)
+
+#### Questions
+
+* What are the four HTTP verbs that we've used ?
+* What are the seven methods for a Restful resource ?
+* Is routing part of MVC ?
+* Where is the routing logic in Sinatra ?
+
+During this introduction to routing in Rails, we have just reviewed the basics of handling HTTP requests in a web app. This is a concept that we will practice everyday from now so don't be worried - you'll have a lot of occasions to practice.
+
+
 
 ## Independent Practice (15 mins)
 
@@ -201,13 +217,3 @@ These three routes will be accessed via a GET request. When the user is accessin
 Then, create a "categories" controller using scaffold, remove the line added in routes.rb by the generator (`resources : categories`) and re-create the seven restful routes matching the 7 methods in the categories controller manually.
 
 
-##Conclusion (10 mins)
-
-#### Questions
-
-* What are the four HTTP verbs that we've used ?
-* What are the seven methods for a Restful resource ?
-* Is routing part of MVC ?
-* Where is the routing logic in Sinatra ?
-
-During this introduction to routing in Rails, we have just reviewed the basics of handling HTTP requests in a web app. This is a concept that we will practice everyday from now so don't be worried - you'll have a lot of occasions to practice.
