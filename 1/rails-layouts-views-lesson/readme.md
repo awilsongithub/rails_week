@@ -48,7 +48,7 @@ In Rails, the logic for the rendering a view is quite straightforward. Given tha
 
 For example , if we call `http://localhost:3000/about_me`, Rails will execute the method `index` in the controller `posts` and then, look for a view located in `app/views/posts/index.html.erb`  This works when the method always renders the same view.
 
-In some cases though, you may want to render a view with a different name than the current method. Lets take a look at this action:
+In some cases though, you may want to render a view with a different name than the current method. 
 
 For example: if a post was saved successfully go to the index page, otherwise go back to the form.
 
