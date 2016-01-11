@@ -58,15 +58,14 @@ Let's compare with code that we have previously written.
 In Sinatra we defined the routes within our controller action:
 
 ```ruby
-  get '/recipes' do
-    @recipes = Recipe.all
-    erb :'recipes/index'
+  get '/posts' do
+    @posts = Post.all
+    erb :'posts/index'
   end
 
-  get '/recipes/new' do
-    @recipe = Recipe.new
-    @categories = Category.all
-    erb :'recipes/new'
+  get '/posts/new' do
+    @post = Post.new
+    erb :'posts/new'
   end
 ```
 
