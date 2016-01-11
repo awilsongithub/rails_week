@@ -46,7 +46,7 @@ In Rails, the logic for the rendering a view is quite straightforward. Given tha
 1. A folder inside view corresponding to the controller's name (folder `home` for `HomeController`).
 2. A file named `about_me.html.erb`.
 
-For example , if we call `http://localhost:3000/about_me`, Rails will execute the method `index` in the controller `posts` and then, look for a view located in `app/views/posts/index.html.erb`  This works when the method always renders the same view.
+For example , if we call `http://localhost:3000/posts`, Rails will execute the method `index` in the controller `posts` and then, look for a view located in `app/views/posts/index.html.erb`  This works when the method always renders the same view.
 
 In some cases though, you may want to render a view with a different name than the current method. 
 
