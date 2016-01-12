@@ -1,4 +1,6 @@
 #Building a Rails API
+# // SEE LAB APP AT RAILS/AW/CONTACTS  
+
 
 ###Learning Objectives
 -Learn how to make a restful api with rails api gem
@@ -25,8 +27,9 @@ Go through files and point out differences
     *In controller, it inherits from APIController - lighter weight than Base
 
 ```
-rails g scaffold task name
-rake db:migrate
+rails g scaffold task name // creates a bunch of files
+rake db:create // create db
+rake db:migrate //migrate, files appear in app files
 ```
 
 Doesn't generate as much code because you're not making views or assets.
@@ -51,7 +54,8 @@ rails s
 ```
 Use postman to test api.
 
-###Code Along(25)
+###Code Along(25) // DID THIS TUE AM IN CLASS..... 
+// IN /CONTACTS DIR IN MY DIR IN RAILS DIR
 ```
 gem install rails-api
 rails-api new contacts -d postgresql
@@ -62,8 +66,10 @@ In routes add
 get "/contacts", to: "contacts#index" 
 post "/contacts", to: "contacts#create"
 ```
-
+// added CONTROLLLER WITH rails-api g controller contacts
 Then move routes in
+
+// then ENTEREED INTO CONTACTS_CONTROLLER.....
 ```
 namespace :api do
 
