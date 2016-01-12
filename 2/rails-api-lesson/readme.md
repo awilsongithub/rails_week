@@ -53,7 +53,8 @@ Use postman to test api.
 
 ###Code Along(25)
 ```
-rails-api new contacts
+gem install rails-api
+rails-api new contacts -d postgresql
 ```
 
 In routes add
